@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>my works</title>
+	<script src="https://lib.baomitu.com/jquery/3.2.1/jquery.slim.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/circleProgress.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+
+		/*nav*/
+		.navbox{
+			background: sienna;
+			margin-bottom: 0;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.navbox a{
+			color: #ffffff;
+		}
+		.navbox .navbar-brand{
+			color: #ffffff;
+		}
+		.navbox .navbar-brand:hover{
+			color: white;
+		}
+		#navlist li {
+			 background-color: sienna;
+		}
+		#navlist li:hover{
+			background-color: #a04b29;
+		}
+		#navlist li a{
+			font-size: 16px;
+		   color: #ffffff;
+		}
+
+
+		header{
+			background-color:sienna;
+			padding-top: 100px;
+			padding-bottom: 50px;
+			color: #ffffff;
+		}
+		/*contact*/
+		.contact{
+			padding: 30px 0;
+			background: #a04b29;
+			color: #ffffff;
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.contact a{
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 28px;
+		}
+
+    /*skills*/
+		#skills{
+			padding:50px 150px 50px 150px;
+		}
+		#skills h2{
+			padding-bottom: 20px;
+			margin-right:0;
+			margin-left: 0;
+		}
+
+		.row{
+			margin-right: 0;
+		}
+		#worksShow .content{
+			padding:40px 100px 0px 100px;
+		}
+		#worksShow img{
+			height: 200px;
+		}
+		#worksShow .item {
+			position: relative;
+			overflow: hidden;
+			padding-bottom: 60px;
+		}
+		#worksShow .introduction{
+			position: absolute;
+			bottom: -70px;
+			background-color:rgba(255,255,255,0.7);
+		}
+		#worksShow .btns {
+			height: 30px;
+			width: 100%;
+		}
+		#worksShow .btns:after{
+			display: block;
+			content: '';
+			clear: both;
+		}
+		#worksShow .code-btn{
+			height: 30px;
+			width: 50px;
+			background-color:sienna;
+			display: block;
+			float: left;
+			border-radius: 5px;
+		}
+		#worksShow .demo-btn{
+			height: 30px;
+			width: 50px;
+			background-color:sienna;
+			display: block;
+			float:right;
+			border-radius: 5px;
+		}
+		#worksShow .btns a{
+			color: white;
+			line-height: 30px;
+			font-size: 18px;
+		}
+		/*myself*/
+		#myself{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			background-color:#fff;
+		}
+		#myself .left{
+			padding-top:30px ;
+			padding-left: 100px;
+		}
+		#myself .right{
+			padding-top: 30px;
+			padding-left: 100px;
+		}
+	</style>
+
+
+
+</head>
+<body>
+<!--nav-->
+<nav class="navbar navbar-default navbox navbar-fixed-top container-fluid">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#navlist">个人简介</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navlist">
+			<ul class="nav navbar-nav">
+				<li class="act"><a href="#skills">拥有技能</a></li>
+				<li><a href="#">项目经验</a></li>
+				<li><a href="#worksShow">作品展示</a></li>
+				<li><a href="#myself">个人信息</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<!--header-->
+<header class="container-fluid text-center">
+	<div class="information">
+	<h1>李文龙</h1>
+	<h3>前端开发</h3>
+	<p>我之所以相较而言，这种将代码变成页面效果的愉悦胜过其他，因为热爱，所以更有兴趣，也更愿意在其中探索奥秘；</p>
+	<p>熟悉Web标准，对原生js面向对象有所研究，热爱新技术，擅用各种前端工具，思维活跃，好奇心强，具有较强的学习能力，活跃于github、coding和一些前端开发社区；</p>
+	<p>具有一定的代码洁癖，责任心强。</p>
+	</div>
+</header>
+<!--contact-->
+<div class="row container-fluid text-center contact">
+		<div class="col-md-4">
+			<a href="mailto:1763938410@qq.com">
+				<i class="fa fa-envelope-o"></i> 1763938410@qq.com</a>
+		</div>
+		<div class="col-md-4">
+			  <i class="fa fa-phone-square"></i><a href=""> 18780104884</a>
+		</div>
+		<div class="col-md-4">
+			  <i class="fa fa-link"></i><a href="https://yeyuqiufenghe.github.io"> yeyuqiufenghe.github.io</a>
+		</div>
+</div>
+<!--skills-->
+<div class="row container-fluid text-center" id="skills">
+	<h2>拥有技能</h2>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+		<div class="progress">
+			<p class="progressText">90</p>
+			<div class="box"></div>
+			<div class="wrapper right">
+				<div class="circleProgress rightcircle"></div>
+			</div>
+			<div class="wrapper left">
+				<div class="circleProgress leftcircle"></div>
+			</div>
+		</div>
+	</div>
+		<h4>HTML&amp;CSS</h4>
+		<p>精通HTML和CSS，熟练手写符合W3C规范的语义化页面</p>
+	</div>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+			<div class="progress">
+				<p class="progressText">70</p>
+				<div class="box"></div>
+				<div class="wrapper right">
+					<div class="circleProgress rightcircle"></div>
+				</div>
+				<div class="wrapper left">
+					<div class="circleProgress leftcircle"></div>
+				</div>
+			</div>
+		</div>
+		<h4>HTML5&amp;CSS3</h4>
+		<p>熟悉HTML5语义化标签，熟练使用HTML5和CSS3常用新特性.<a target="_blank" href="https://yeyuqiufenghe.github.io/CSS3/" class="css3-loading">&gt;各种loading效果.</a></p>
+	</div>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+			<div class="progress">
+				<p class="progressText">70</p>
+				<div class="box"></div>
+				<div class="wrapper right">
+					<div class="circleProgress rightcircle"></div>
+				</div>
+				<div class="wrapper left">
+					<div class="circleProgress leftcircle"></div>
+				</div>
+			</div>
+		</div>
+		<h4>JavaScript</h4>
+		<p>熟悉ECMAScript语法,原生BOM/DOM,JSON, JSONP以及JS的原型和原型链等,并对JS的设置模式有所理解,且代码风格良好.</p>
+	</div>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+			<div class="progress">
+				<p class="progressText">80</p>
+				<div class="box"></div>
+				<div class="wrapper right">
+					<div class="circleProgress rightcircle"></div>
+				</div>
+				<div class="wrapper left">
+					<div class="circleProgress leftcircle"></div>
+				</div>
+			</div>
+		</div>
+		<h4>Query/Zepto</h4>
+		<p>熟悉jQuery/Zepto,手写jQuery插件实现常见效果,并对jQuery源码进行过研究.<br><br></p>
+	</div>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+			<div class="progress">
+				<p class="progressText">65</p>
+				<div class="box"></div>
+				<div class="wrapper right">
+					<div class="circleProgress rightcircle"></div>
+				</div>
+				<div class="wrapper left">
+					<div class="circleProgress leftcircle"></div>
+				</div>
+			</div>
+		</div>
+		<h4>Requirejs/Webpack</h4>
+		<p>能使用requirejs进行代码的压缩打包.</p>
+	</div>
+	<div class="col-md-4">
+		<div class="circleProgress_wrapper center-block">
+			<div class="progress">
+				<p class="progressText">75</p>
+				<div class="box"></div>
+				<div class="wrapper right">
+					<div class="circleProgress rightcircle"></div>
+				</div>
+				<div class="wrapper left">
+					<div class="circleProgress leftcircle"></div>
+				</div>
+			</div>
+		</div>
+		<h4>Bootstrap</h4>
+		<p>使用Bootstrap完成常见响应式页面.</p>
+	</div>
+</div>
+<!--worksShow-->
+<div class="row container-fluid text-center" id="worksShow">
+	<h2>作品展示</h2>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/music_player-min.jpg" alt="">
+			<div class="introduction">
+				<h4>音乐播放器</h4>
+				<p>一个在线音乐播放器，数据源来自百度音乐API，实现播放、暂停、下一首、歌词显示、进度条拖动等常规音乐播放器具备的功能.</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/yeyuqiufenghe/music-player/blob/master/index.html">code</a>
+			<a class="demo-btn" href="https://yeyuqiufenghe.github.io/music-player/">demo</a>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/企业站.jpg" alt="">
+			<div class="introduction">
+				<h4>企业站</h4>
+				<p>常用企业站，包括导航条，布局，内容的分块，等一些常见的的模块</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/yeyuqiufenghe/Enterprise-website/blob/master/index.html">code</a>
+			<a class="demo-btn" href="https://yeyuqiufenghe.github.io/Enterprise-website/">demo</a>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/jsonp.jpg" alt="">
+			<div class="introduction">
+				<h4>新浪图片新闻摘要</h4>
+				<p>利用新浪的图片新闻api接口，来获得jsonp的数据，其中用到了图片的懒加载，瀑布流的显示，等常见的效果</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/yeyuqiufenghe/jsonp/blob/master/index.html">code</a>
+			<a class="demo-btn" href="https://yeyuqiufenghe.github.io/jsonp/index">demo</a>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/基于bootstrap的网站_meitu_4.jpg" alt="">
+			<div class="introduction">
+				<h4>bootstrap网站</h4>
+				<p>利用bootstrap框架搭建的一个响应式网站，其中包含常见的轮播图，导航条，tab切换，回到顶部等功能</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/yeyuqiufenghe/bootstrap/blob/master/index.html">code</a>
+			<a class="demo-btn" href="https://yeyuqiufenghe.github.io/bootstrap/">demo</a>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/模仿报纸的排版_meitu_1.jpg" alt="">
+			<div class="introduction">
+				<h4>模仿报纸的排版</h4>
+				<p>利用html+css简单的实现报纸排版的样式</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/yeyuqiufenghe/html-css/blob/master/index.html">code</a>
+			<a class="demo-btn" href="https://yeyuqiufenghe.github.io/html-css/index">demo</a>
+		</div>
+	</div>
+	<div class="col-md-4 content">
+		<div class="item">
+			<img src="images/购物商城.jpg" alt="">
+			<div class="introduction">
+				<h4>在线购物商城</h4>
+				<p>一个女性在线购物商城，整合首屏轮播，店铺商品搜索切换，电商常用整站导航条，顶部粘连搜索框以及回到顶部等功能，代码使用Webpack进行打包.</p>
+			</div>
+		</div>
+		<div class="btns">
+			<a class="code-btn" href="https://github.com/feng-fu/works/tree/master/shopping">code</a>
+			<a class="demo-btn" href="http://fengfu.space/works/shopping/">demo</a>
+		</div>
+	</div>
+
+</div>
+<!--more-->
+<div class="row" id="myself">
+	<h2 class="text-center">了解更多</h2>
+	<div class="col-md-4 left">
+		<p><span>学历：</span><span>大学本科</span></p>
+		<p><span>技能：</span><span>英语四级</span></p>
+
+	</div>
+	<div class="col-md-8 right">
+			<p>日常使用GIT做版本控制，使用sublime/Atom/WebStorm进行开发，也在尝试新的工具，如Vim.</p>
+			<p>使用Google+github关键词来搜寻好用的库，在Stackoverflow上寻求问题解决之道.</p>
+			<p>把MDN当做文档来查，热爱书籍，啃各种技术文档.</p>
+			<p>在npm上了解更多好用的工具，也参与其中希望能贡献一份力.</p>
+		  <p>同时也在学习一些常见的的框架</p>
+	</div>
+</div>
+
+
+</body>
+<script>
+	//技能进度条的展示
+	function progress() {
+		var $progress = $('.circleProgress_wrapper .progress');
+		$progress.on('click',function () {
+			var $this = $(this);
+			var text =$this.parents('.circleProgress_wrapper').find('.progressText').text();
+			var cur = $this.parents('.circleProgress_wrapper').find('.progressText');
+			var parents = $this.parents('.circleProgress_wrapper');
+			console.log(text);
+			var num = parseInt(text);
+
+			var x,y;
+			var a=0;
+			var clock = setInterval(function () {
+				a++;
+				x = 45-3.6*(100-a);
+				y = 45-3.6*(50-a);
+
+				if (a>=50){
+					parents.find($('.leftcircle')).css("transform","rotate("+x+"deg)");
+					parents.find($('.rightcircle')).css("transform","rotate(45deg)");
+				}
+				else if (50>a>=0){
+					parents.find(('.leftcircle')).css("transform","rotate(225deg)");
+					parents.find(('.rightcircle')).css("transform","rotate("+y+"deg)");
+				}
+				cur.text(a+'%');
+				if(a===num){
+					clearInterval(clock);
+				}
+			},50);
+		});
+		$progress.click();
+	}
+	progress();
+
+</script>
+</html>
